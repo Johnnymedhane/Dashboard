@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <!-- icons -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-container">
+       <header class="head">
+      
+       <div class="heade-container">
+       <div class="upper">
+        <div class="search-input">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" 
+        fill="#000000">
+        <path d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z"/>
+    </svg>
+    
+      <div>
+            <form action="">
+                <input type="search" class="search-bar" id="search-bar">
+            </form>
+
+        </div>
+        </div>
+
+        <div class="after-search">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#000000"><path d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"/></svg>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#F19E39"><path d="M295-320q-3-4 19.5-31.5T366-410q33-37 77-82 12-18 33-18t35 16q12 16 9 36.5T498-428q-55 33-98 58-38 21-70 37.5T295-320ZM430-40q-5 0-10-2t-8-7q-4-6-8-16.5T400-90q0-9 1-16.5t3-15.5q-27-5-45.5-27T340-200q0-4 3-21-74-26-119.5-83T165-451q-5 5-11 8t-14 3q-15 0-37.5-22.5T80-560q0-69 40.5-124.5T200-740q13 0 16.5 11.5T220-706q38-54 95.5-89T442-838q6-29 29-45.5t49-16.5v40q4-6 10-10 5-4 12.5-7t17.5-3q10 0 17.5 3t12.5 7q6 4 10 10-15 0-25 9t-13 22q54 14 100 46t78 77q0-11 3.5-22.5T760-740q39 0 79.5 55.5T880-560q0 75-22.5 97.5T820-440q-7 0-13.5-2.5T795-450q-14 100-68.5 159.5T582-211q3 14 13.5 22.5T620-180h23q7 0 12 4t7 10q5 16 17.5 30t23.5 23q8 7 7.5 16.5T702-82q-11 8-28 14t-44 8q-5 0-10-2t-8-7q-4-6-8-16.5t-4-24.5q0-9 1-16.5t3-15.5q-24-5-40.5-22T542-204q-15 2-30 3t-32 1q-26 0-50.5-2.5T382-210l-2 10q0 17 11.5 28.5T420-160h23q7 0 12 4t7 10q5 16 17.5 30T503-93q8 7 7.5 16.5T502-62q-11 8-28 14t-44 8Zm320-391q5-20 7.5-42t2.5-47q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 24 2.5 46t7.5 42q5-20 13.5-39.5T243-508q-6-14-9.5-29.5T230-570q0-63 43.5-106.5T380-720q29 0 54.5 10.5T480-681q20-18 45.5-28.5T580-720q63 0 106.5 43.5T730-570q0 17-3.5 32.5T716-508q11 17 20 36.5t14 40.5ZM480-240q87 0 146.5-27t92.5-81q0-3 .5-6t.5-6q0-30-7-58t-21-53q-21 23-49.5 37T580-420q-8 0-16-1t-16-3q5-7 7.5-14.5T559-454q1-2 1-4v-4q5 1 10 1.5t10 .5q46 0 78-32t32-78q0-46-32-78t-78-32q-20 0-39 7.5T507-651l-27 24-27-24q-15-14-34-21.5t-39-7.5q-46 0-78 32t-32 78q0 41 25.5 70.5T359-462l-30 33q-18-7-33.5-17.5T268-471q-14 25-21 53t-7 58v10q34 54 94 82t146 28Zm100-260q-25 0-42.5-20.5T520-570q0-29 17.5-49.5T580-640q25 0 42.5 20.5T640-570q0 29-17.5 49.5T580-500Zm15-90q7 0 11-4.5t4-10.5q0-6-4.5-10.5T595-620q-7 0-11 4.5t-4 10.5q0 7 4.5 11t10.5 4Zm-215 90q-25 0-42.5-20.5T320-570q0-29 17.5-49.5T380-640q25 0 42.5 20.5T440-570q0 29-17.5 49.5T380-500Zm15-90q7 0 11-4.5t4-10.5q0-6-4.5-10.5T395-620q-7 0-11 4.5t-4 10.5q0 7 4.5 11t10.5 4Z"/></svg>
+              <p>Johnny Medhane</p>
+         
+    </div>
+
+</div>
+
+
+
+       <div class="lower">
+        <svg xmlns="http://www.w3.org/2000/svg" height="58px"
+         viewBox="0 -960 960 960" width="48px" fill="#F19E39">
+         <path d="M295-320q-3-4 19.5-31.5T366-410q33-37 77-82 12-18 33-18t35 16q12 16 9 36.5T498-428q-55 33-98 58-38 21-70 37.5T295-320ZM430-40q-5 0-10-2t-8-7q-4-6-8-16.5T400-90q0-9 1-16.5t3-15.5q-27-5-45.5-27T340-200q0-4 3-21-74-26-119.5-83T165-451q-5 5-11 8t-14 3q-15 0-37.5-22.5T80-560q0-69 40.5-124.5T200-740q13 0 16.5 11.5T220-706q38-54 95.5-89T442-838q6-29 29-45.5t49-16.5v40q4-6 10-10 5-4 12.5-7t17.5-3q10 0 17.5 3t12.5 7q6 4 10 10-15 0-25 9t-13 22q54 14 100 46t78 77q0-11 3.5-22.5T760-740q39 0 79.5 55.5T880-560q0 75-22.5 97.5T820-440q-7 0-13.5-2.5T795-450q-14 100-68.5 159.5T582-211q3 14 13.5 22.5T620-180h23q7 0 12 4t7 10q5 16 17.5 30t23.5 23q8 7 7.5 16.5T702-82q-11 8-28 14t-44 8q-5 0-10-2t-8-7q-4-6-8-16.5t-4-24.5q0-9 1-16.5t3-15.5q-24-5-40.5-22T542-204q-15 2-30 3t-32 1q-26 0-50.5-2.5T382-210l-2 10q0 17 11.5 28.5T420-160h23q7 0 12 4t7 10q5 16 17.5 30T503-93q8 7 7.5 16.5T502-62q-11 8-28 14t-44 8Zm320-391q5-20 7.5-42t2.5-47q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 24 2.5 46t7.5 42q5-20 13.5-39.5T243-508q-6-14-9.5-29.5T230-570q0-63 43.5-106.5T380-720q29 0 54.5 10.5T480-681q20-18 45.5-28.5T580-720q63 0 106.5 43.5T730-570q0 17-3.5 32.5T716-508q11 17 20 36.5t14 40.5ZM480-240q87 0 146.5-27t92.5-81q0-3 .5-6t.5-6q0-30-7-58t-21-53q-21 23-49.5 37T580-420q-8 0-16-1t-16-3q5-7 7.5-14.5T559-454q1-2 1-4v-4q5 1 10 1.5t10 .5q46 0 78-32t32-78q0-46-32-78t-78-32q-20 0-39 7.5T507-651l-27 24-27-24q-15-14-34-21.5t-39-7.5q-46 0-78 32t-32 78q0 41 25.5 70.5T359-462l-30 33q-18-7-33.5-17.5T268-471q-14 25-21 53t-7 58v10q34 54 94 82t146 28Zm100-260q-25 0-42.5-20.5T520-570q0-29 17.5-49.5T580-640q25 0 42.5 20.5T640-570q0 29-17.5 49.5T580-500Zm15-90q7 0 11-4.5t4-10.5q0-6-4.5-10.5T595-620q-7 0-11 4.5t-4 10.5q0 7 4.5 11t10.5 4Zm-215 90q-25 0-42.5-20.5T320-570q0-29 17.5-49.5T380-640q25 0 42.5 20.5T440-570q0 29-17.5 49.5T380-500Zm15-90q7 0 11-4.5t4-10.5q0-6-4.5-10.5T395-620q-7 0-11 4.5t-4 10.5q0 7 4.5 11t10.5 4Z"/></svg> 
+       
+       <div class="title">
+        <span>hey there. </span>
+        <p>Johnny Medhane (johnnymedhane@)</p>
+       </div>
+       <div class="list">
+        <ul>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Upload</a></li>
+            <li><a href="#">Share</a></li>
+        </ul>
+       </div>
+    </div>
+</div>
+    </header>
+    <!-- side -->
+       <aside class="side">
+             
+        <div class="side-container">
+            <div class="div1" id="">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="10 -960 960 960" width="24px" fill="#5f6368"><path 
+                d="M520-600v-240h320v240H520ZM120-440v-400h320v400H120Zm400 320v-400h320v400H520Zm-400 0v-240h320v240H120Zm80-400h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z"/>
+            </svg>
+            <p>Dashboard</p>
+        
+            </div>
+
+            <div class="div2" id="">
+            <div class="tex">
+                <span class="material-symbols-outlined">
+                    home
+                    </span>
+                    <p>Home</p>
+            </div>
+            <div class="text"><span class="material-symbols-outlined">
+                account_box
+                </span>
+            <p>Profile
+            </p></div>
+
+            <div class="tex"><span class="material-symbols-outlined">
+             mode_comment
+          </span>
+          <p>messages</p>
+        </div>
+            <div class="text"><span class="material-symbols-outlined">
+                schedule
+                </span>
+            <p>History</p></div>
+
+            <div class="text"><span class="material-symbols-outlined">
+           task
+         </span>
+        <p>Tasks</p></div>
+
+            <div class="text"><span class="material-symbols-outlined">
+          groups_2
+            </span>
+        <p>Communities</p></div>
+            </div>
+            <div class="div3" id="">
+                <div class="text"><span class="material-symbols-outlined">
+                    settings
+                    </span>
+                <p>Setting</p></div>
+                <div class="text"><span class="material-symbols-outlined">
+                    help_center
+                    </span>
+                <p>Support</p></div>
+                <div class="text"><span class="material-symbols-outlined">
+                    verified_user
+                    </span>
+                <p>Privacy</p></div>
+              
+            </div>
+           </div>
+          
+       </aside>
+       <main class="main">
+      <div class="main-con1">
+       <p>projects</p>
+       <div class="boxs">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+     </div>
+
+      <div class="main-con2">
+       <p> conclusions</p>
+        <div></div>
+        <div></div>
+      </div>
+           
+       </main>
+      
+    </div>
+   
+</body>
+</html>
