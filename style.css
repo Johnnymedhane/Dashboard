@@ -360,25 +360,36 @@ box-shadow: 2px 3px 5px;
     
 }
 
-@media only screen and  (max-width: 800px){
-    .main{
-    flex-direction: column;
-    align-items: center;
+@media  screen and  (width: 768px){
+    .main-con2 div:first-of-type{
+  margin-bottom: 100px;
+   
+     
+    }
+}
+@media  screen and  (width: 768px){
+    .main-con2> div {
+  height: 400px;
    
      
     }
 }
 
 @media only screen and  (max-width: 800px){
+
     .main .boxs {
       grid-template-columns: 100%;
       
     
     }
 }
-@media only screen and  (max-width: 800px){
+
+
+@media only screen and  (max-width: 600px){
     .main {
-      padding: 5px;
+        flex-direction: column;
+    align-items: center;
+   
     }
 }
 
