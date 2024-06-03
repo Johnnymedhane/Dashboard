@@ -35,7 +35,7 @@ html{
 body{
   
     font-family: Roboto, sans-serif;
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
     font-size: var(--font-size);
     background: var(--background);
@@ -50,8 +50,8 @@ body{
   
     
     display: grid;
-    grid-template-columns: 18% auto;
-    grid-template-rows: 17% 83%;
+    grid-template-columns: 15% auto;
+    grid-template-rows: 13% auto;
     
     grid-template-areas:'sidebar header'
                   'sidebar main';
@@ -91,7 +91,7 @@ body{
     gap: 10px;
 }
 input{
-    width: 360px;
+    width: 400px;
     outline: none;
     background: #e8ecf1;
     border-radius: 20px;
@@ -167,7 +167,8 @@ input{
  
  
 }
-@media screen {
+    @media  only screen and (max-width: 700px) 
+          {
     body{
         font-size: 0.9rem;
     }
@@ -191,7 +192,7 @@ input{
 
     }
         
-    @media  only screen and (max-width: 700px){
+    @media  only screen and (max-width: 800px){
 
         .heade-container .upper input{
         width: 150px;
@@ -254,7 +255,7 @@ input{
    font-size: .9rem;
    padding: 0 11px 5px;
    border-radius: 10px;
-  align-self: end;
+ 
        }
     }
 
@@ -263,8 +264,8 @@ input{
 
 @media only screen and  (max-width: 800px){
   .grid-container {
-      grid-template-columns: 12% auto; 
-      grid-template-rows: 8% auto;
+      grid-template-columns: 8% auto; 
+      grid-template-rows: 5% auto;
     }
 }
 
@@ -275,11 +276,13 @@ input{
 
 .main{
    
-   width: max-content;
+   width: 100%;
     grid-area: main;
  display: flex;
- gap: 10px;
-padding: 10px 10px 20px;
+ gap: 40px;
+padding: 10px 20px 20px;
+font-size: 1rem;
+font-weight: 500;
 
 
 }
@@ -288,7 +291,8 @@ padding: 10px 10px 20px;
 
 
 .main-con1{
-    width: 70%;
+    width: 80%;
+   
    
    
 }
@@ -296,16 +300,18 @@ padding: 10px 10px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
   
   
 
 }
 .boxs> div {
-    width: 330px;
-    height: 130px;
-    background: rgb(48, 39, 39);
+    max-width: 370px;
+    min-height: 200px;
+    background: white;
     position: relative;
+    font-size: 0.8rem;
+    padding: 20px;
 }
 
 .boxs .box::before {
@@ -315,23 +321,49 @@ padding: 10px 10px 20px;
     background: #f39f0c;
     width: 12px;
     height: 100%;
+    left: 0;
+    top: 0;
 
 }
 
 .main-con2{
-    width:30%;
-    height: 100%;
+    width:auto;
+    text-align: center;
+  
+   
    
 }
 .main-con2> div{
+    
     width: 270px;
-height: 205px;
-background: #f39f0c;
+height: 300px;
+box-shadow: 2px 3px 5px;
+
+}
+.main-con2 div:first-of-type{
+   background-image: url('book-img.jpeg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+    margin-bottom: 35px;
+    
+}
+
+
+
+.main-con2 div:last-child{
+  background-image: url('bac-img.jpeg');
+  background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+  
+    
 }
 
 @media only screen and  (max-width: 800px){
     .main{
     flex-direction: column;
+    align-items: center;
    
      
     }
@@ -340,7 +372,8 @@ background: #f39f0c;
 @media only screen and  (max-width: 800px){
     .main .boxs {
       grid-template-columns: 100%;
-     margin-left: 5px;
+      
+    
     }
 }
 @media only screen and  (max-width: 800px){
@@ -352,10 +385,10 @@ background: #f39f0c;
 
 /* side bar */
 
-@media only screen and  (max-width: 800px){
+@media only screen and  (max-width: 700px){
     .side .side-container{
-        grid-template-rows: 3% 15% auto;
-       background: #f39f0c;
+        grid-template-rows: 10% 70% auto;
+       
     }
 }
 
@@ -368,9 +401,9 @@ background: #f39f0c;
 .side-container{
    
     display: grid;
-   height: 100%;
+  
     grid-template-columns: 100%;
-    grid-template-rows: 7% 0.4fr auto;
+    grid-template-rows: 10% 1fr auto;
     grid-template-areas: 'first'
                          'second'
                           'third';
