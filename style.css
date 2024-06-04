@@ -184,7 +184,7 @@ input{
     @media  only screen and (max-width: 700px){
 
      .heade-container .upper, .heade-container .lower{
-       padding: 5px 0;
+       padding: 5px;
       
      }
 
@@ -228,7 +228,7 @@ input{
        @media  only screen and (max-width: 800px){
 
         .heade-container .lower .list{
-         margin-left: 5px;
+         margin-left:auto;
        
         }
    
@@ -241,7 +241,7 @@ input{
         .heade-container .lower .list ul{
      
        
-       margin-left: 0px;
+       /* margin-left: auto; */
   
    
        }
